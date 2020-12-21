@@ -75,8 +75,9 @@
     }
 </style>
 <script>
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
     window.addEventListener('resize', () => {
-        // We execute the same script as before
         let vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
@@ -92,8 +93,8 @@
         <a href="https://vk.com/aasvobodina">Личка vk</a>
         <a href="https://t.me/svobodinaphoto">Написать в Telegram</a>
         <a href="https://wa.me/%2B79514616243">Написать в WhatsApp</a>
-        <a href="viber://chat:%2B79514616243">Написать в Viber</a>
-        <a href="viber://tel:%2B79514616243">Написать tel в Viber</a>
+        <a href="viber://chat:89514616243">Написать в Viber</a>
+        <a href="viber://tel:89514616243">Написать tel в Viber</a>
         <a href="https://www.instagram.com/svobodinaphoto/">Instagram</a>
         <a href="tel:+79514616243">Позвонить</a>
         <img class="logo" src="./logo.png" alt="logo">
