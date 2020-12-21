@@ -19,11 +19,9 @@
         color: white;
         padding: 1vh;
         justify-self: center;
-
-        font-size: max(1.2vw, 16px);
+        font-size: max(1.2vw, 18px);
         border: solid 1px white;
         border-radius: 5px;
-        /* margin: 3px; */
         width: max(300px, 30vw);
         text-align: center;
     }
@@ -36,11 +34,10 @@
     .link {
         font-family: Roboto Slab;
         background-image: repeating-linear-gradient(22.5deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 20px, transparent 20px, transparent 21px), repeating-linear-gradient(112.5deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 20px, transparent 20px, transparent 21px), linear-gradient(90deg, hsl(148, 52%, 47%), hsl(220, 52%, 47%), hsl(292, 52%, 47%), hsl(4, 52%, 47%), hsl(76, 52%, 47%));
-
         display: grid;
         row-gap: 1vh;
         grid-template-rows: auto;
-        align-content: center;
+        align-content: space-around;
         height: 100vh;
         height: calc(var(--vh, 1vh) * 100);
     }
@@ -48,7 +45,8 @@
     .logo {
         justify-self: end;
         width: min(20vw, 100px);
-        padding-left: 2vw;
+        margin-right: 2vw;
+        margin-bottom: 2vw;
     }
 
     .ava {
