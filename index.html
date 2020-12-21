@@ -2,8 +2,6 @@
 <html lang="ru">
 
 <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="author" content="Ivan Svobodin" />
     <meta name="description" content="Links for contact" />
@@ -12,6 +10,19 @@
     <title>SvobodinaPhoto</title>
 </head>
 <style>
+    /* roboto-slab-200 - latin_cyrillic */
+    @font-face {
+        font-family: 'Roboto Slab';
+        font-display: swap;
+        font-style: normal;
+        font-weight: 200;
+        src: local(''),
+            url('./roboto-slab-v12-latin_cyrillic-200.woff2') format('woff2'),
+            /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('./roboto-slab-v12-latin_cyrillic-200.woff') format('woff');
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
     a {
         text-decoration: none;
         text-decoration-line: none;
