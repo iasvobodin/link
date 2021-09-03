@@ -35,7 +35,26 @@
         padding: 0;
         height: auto;
     }
-    a {
+    .link__pry{
+        /* border: 1px solid blue; */
+        text-decoration: none;
+        text-decoration-line: none;
+        text-decoration-color: white;
+        color: white;
+        padding: 3px;
+        border-radius: 5px;
+    }
+    .link__pry:hover{
+        /* border: 1px solid blue; */
+        text-decoration: none;
+        text-decoration-line: none;
+        text-decoration-color: white;
+        color: purple;
+        background-color: white;
+        padding: 3px;
+        border-radius: 5px;
+    }
+    .contact__link {
         position: relative;
         text-decoration: none;
         text-decoration-line: none;
@@ -49,7 +68,17 @@
         width: max(300px, 30vw);
         text-align: center;
     }
-
+    .contact__link::before {
+        content: "";
+        z-index: -1;
+        border-radius: 5px;
+        background: linear-gradient(7deg, #ba682d, #840000 41.07%, #003c96 76.05%);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+    }
 
 
     .link {
@@ -201,17 +230,7 @@ h1,
             height: calc(100% + 6px);
             z-index: 2;
           } */
-    a::before {
-        content: "";
-        z-index: -1;
-        border-radius: 5px;
-        background: linear-gradient(7deg, #ba682d, #840000 41.07%, #003c96 76.05%);
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        width: calc(100% + 4px);
-        height: calc(100% + 4px);
-    }
+
 
     .ava::before {
         content: "";
@@ -329,4 +348,11 @@ h1,
       input[type='checkbox']{
         justify-self: center;
         margin-right: ;
+      }
+      .privacy{
+          width: min(95vw, 700px);
+          margin: auto;
+          border: 1px solid red;
+          border-radius: 5px;
+          padding: 2vh;
       }
